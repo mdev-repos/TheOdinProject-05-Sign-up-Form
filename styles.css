@@ -1,0 +1,244 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+:root{
+    --main-color:#080731;
+    --alt-color:#f8e1e1;
+    --form-color:#f8e8e8;
+    --main-font:'Actor', sans-serif;
+    --special-font:'Allan', display;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.card-container{
+    width: 60%;
+    height: 100%;
+    background-image: url(./assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.lft-content-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odin-logo{
+    width: 100%;
+    height: 27%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin-logo img{
+    height: 80%;
+    width: auto;
+    margin-left: 10%;
+}
+
+.odin-logo p{
+    font-family: var(--special-font);
+    font-size: 1.4rem;
+    height: auto;
+    width: 50%;
+    margin-left: 15%;
+    color: antiquewhite;
+}
+
+.lft-footer-container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.footer-text{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.rgt-content-container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    background-color: var(--alt-color);
+}
+
+.cta-text-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 7px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.main-text{
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+.emphasis{
+    font-size: inherit;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+}
+
+.form-container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+    gap: 7px;
+    color: var(--main-color);
+}
+
+form{
+    width: 100%;
+}
+
+.form{
+    width: 100%;
+    background-color: var(--form-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-separator{
+    display: flex;
+}
+
+.form-entrance{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 90px 2px 0;
+    position: relative;
+}
+
+.form-separator:last-child{
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+label{
+    font-size: 0.9rem;
+    margin-bottom: 1px;
+    margin-left: 2px;
+    font-family: inherit;
+}
+
+input{
+    width:140%;
+    max-width: 180px;
+    border-radius: 4px;
+    border: 1px solid var(--alt-color);
+    padding: 3px;
+    font-size: 0.9rem;
+}
+
+input:invalid{
+    border: 1px solid #c05d5d;
+}
+
+input:valid{
+    border: 1px solid green;
+}
+
+input:focus{
+    border: 1px solid var(--alt-color);
+    box-shadow: 1px 1px 2px var(--main-color);
+    outline: none;
+}
+
+.form-btn{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 5px 25px;
+    font-family:var(--main-font);
+    background-color: var(--main-color);
+    color: var(--alt-color);
+    border: none;
+    border-radius: 3px;
+}
+
+.form-btn:hover, a:hover{
+    opacity: 0.7;
+    cursor:pointer;
+}
+
+.form-container p{
+    padding: 20px;
+}
+
+.rgt-footer-container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+
+.error-message {
+    position: absolute; 
+    bottom: -50px; 
+    left: -15px; 
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 2px;
+    white-space: nowrap; 
+}
+
